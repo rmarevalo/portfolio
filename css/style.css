@@ -1,0 +1,38 @@
+
+
+/* About */
+
+.section-title-font{ font-size: var(--h2-font-size); }
+
+section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    /* align-content: space-around; */
+    row-gap: 2.3rem;
+    height: 100%;
+    
+}
+
+
+
+/* SKILLS */
+
+
+@media screen and (min-width: 768px){
+
+    /* About */
+    .section-title{
+        margin-top: 3rem;
+    }
+    .w-main{
+        padding-top: calc(var(--header-height) + 1rem);
+    }
+    .g-main{
+        padding-top: calc(var(--header-height) + 1rem);
+    }
+
+
+}
+

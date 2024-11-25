@@ -1,0 +1,50 @@
+/* General styling for the parent container */
+.template1_content {
+  display: flex; /* Enable flex layout */
+  flex-direction: row; /* Default: side-by-side layout */
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Space between children */
+  padding: 20px;
+  color: #000;
+}
+
+/* Styling for the image */
+.template1_image img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto;
+  display: block;
+}
+
+/* Title styling */
+.template1_title h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+/* Details styling */
+.template1_details p {
+  margin: 10px 0 0;
+  font-size: 1em;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 768px) {
+  .template1_content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align content for mobile */
+  }
+
+  .template1_title {
+    order: 0; /* Title stays on top */
+    text-align: center; /* Center the title for mobile */
+  }
+
+  .template1_image {
+    order: 1; /* Image goes in the middle */
+  }
+
+  .template1_details {
+    order: 2; /* Details go at the bottom */
+    text-align: center; /* Center the text for mobile */
+  }
+}

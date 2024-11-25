@@ -1,0 +1,110 @@
+/* Header */
+
+.l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--black-color);
+}
+
+.nav{
+    height: var(--header-height);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: var(--font-bold);
+}
+
+.nav-logo{
+    font-size: var(--normal-font-size);
+    color: var(--white-color);
+}
+
+.nav-logo span{ color: var(--second-color);}
+
+.nav-list{ text-align: center; margin-bottom: 0;}
+.nav-link{ color: var(--white-color);}
+.nav-link:hover{ position: relative; }
+
+.nav-link:focus{
+    color: var(--white-color);
+}
+
+.nav-link:hover::after{
+    position: absolute;
+    content: '';
+    width: 1.5rem;
+    height: 0.1875rem;
+    left: 0.125rem;
+    top: 2.125rem;
+    background-color: var(--first-color);
+}
+
+.nav-link.active{
+    color: var(--second-color);
+}
+
+.nav-link.active::after{
+    position: absolute;
+    content: '';
+    width: 1.5rem;
+    height: 0.1875rem;
+    left: 0.125rem;
+    top: 2.125rem;
+    background-color: var(--first-color);
+}
+
+.nav-toggle{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 760px){
+    .nav-menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(var(--black-color)), to(var(--first-color)));
+        background-image: linear-gradient(var(--black-color), var(--first-color));
+        width: 100%;
+        height: 35%;
+        padding: 1.5rem;
+        border-radius: 0 0 1rem 1rem;
+        transition: .5s;
+    }
+
+    .show{ top: var(--header-height); }
+
+    .nav-list {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+
+    .nav{ height: calc(var(--header-height) + 1rem); }
+
+    .nav-list{ 
+        display: flex;
+        padding-top: 0;
+    }
+
+    .nav-item{
+        margin-left: 3rem;
+        margin-bottom: 0;
+    }
+
+    .nav-toggle{ display: none; }
+    
+}

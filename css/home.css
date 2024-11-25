@@ -1,0 +1,117 @@
+/* 3 Box Animation */
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% / 3);
+    height: 100%;
+    z-index: var(--z-modal);
+}
+
+.first{ background-color: var(--first-color); }
+
+.second{
+    background-color: var(--first-color);
+    left: 33.3%;
+}
+
+.third{
+    background-color: var(--first-color);
+    left: 66.6%;
+}
+
+
+/* Content */
+.l-main{
+    /* height: calc(100vh - var(--header-height)); */
+    height: 100vh;
+    background-color: var(--black-color);
+    position: relative;
+}
+
+.home{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    align-content: space-around;
+    row-gap: 2.3rem;
+    height: 100%;
+    font-weight: var(--font-bold);
+}
+
+.home-information{
+    padding-left: 1.5rem;
+    margin-top: 3rem;
+    border-left: 5px solid var(--white-color);
+    z-index: var(--z-tooltip);
+}
+
+.home-pressent{ font-size: var(--small-font-size); }
+.home-title{ font-size: var(--h1-font-size); }
+.home-skill{ font-size: var(--h2-font-size); }
+
+.home-button{
+    display: inline-block;
+    margin-top: 1.5rem;
+    font-size: .75rem;
+    color: var(--white-color);
+    padding: 0.625rem 1rem;
+    border-radius: .25rem;
+    background-image: linear-gradient(to right, var(--black-color), var(--first-color));
+}
+
+.home-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 270px;
+    z-index: var(--z-normal);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .home{
+        grid-template-rows: max-content 20px;
+        align-content: center;
+    }
+
+    .home-information{ margin-top: 2rem; }
+
+    .home-img{
+        width: 350px;
+        right: 0;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+
+    .home{
+        grid-template-rows: max-content 20px;
+        align-content: center;
+    }
+
+    .home-information{ margin-top: 2rem; }
+
+    .home-img{
+        width: 450px;
+        right: 5%;
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+
+    .home{
+        grid-template-rows: max-content 20px;
+        align-content: center;
+    }
+
+    .home-information{ margin-top: 2rem; }
+
+    .home-img{
+        width: 550px;
+        right: 5%;
+    }
+
+}

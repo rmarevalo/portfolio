@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --first-color: #4e1116;
+    --black-color: #000;
+    --white-color: #fff;
+    --gray-color: #29363F;
+    --second-color: #2D5FB6;
+    --body-color: hsl(0, 0%, 87%);
+    --box-color: hsla(218, 61%, 45%, 0.2);
+    --facebook-color:#3B5998;
+    --gmail-color: #EA4335;
+    --twitter-color: #38A1F3;
+
+    --container-color: hsl(0, 0%, 83%);
+
+    --body-font: 'Poppins', sans-serif;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1rem;
+    --about-font-size: 1.75rem;
+    --normal-font-size: .93rem;
+    --small-font-size: .81rem;
+    --about-info-font-size: 1.25rem;
+
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+
+    --header-height: 3rem;
+    --font-bold: 700;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    :root{
+        --h1-font-size: 3.5rem;
+        --h2-font-size: 1.5rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 1.2rem;
+        --about-font-size: 3rem;
+        --about-info-font-size: 1.5rem;
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+
+    :root{
+        --h1-font-size: 4.5rem;
+        --h2-font-size: 1.7rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 1.37rem;
+        --about-font-size: 3rem;
+        --about-info-font-size: 1.5rem;
+    }
+    
+}
