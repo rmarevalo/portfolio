@@ -22,7 +22,7 @@
 }
 .project__description{
     font-size: 0.9rem;
-    font-weight: normal;
+    font-weight: 300;
     margin-top: 1rem;
 }
 
@@ -34,13 +34,13 @@ iframe {
 
 .project__technology{
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
 }
 
 .technologies__body{
-    font-size: 0.9rem;
-    font-weight: normal;
+    font-size: 0.8rem;
+    font-weight: 300;
     margin-top: 0.8rem;
     line-height: 1.5rem;
     margin-left: 1rem;
