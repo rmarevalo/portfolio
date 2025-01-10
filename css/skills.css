@@ -33,6 +33,13 @@
     }
 }
 
+.skills__box:hover{
+    img{
+        width: 60px;
+        height: 60px;
+    }
+}
+
 
 
 @media screen and (min-width: 768px){
@@ -55,6 +62,13 @@
         .img_reset{
             width: 80px;
             height: 80px!important;
+        }
+    }
+
+    .skills__box:hover{
+        img{
+            width: 90px;
+            height: 90px;
         }
     }
 }
